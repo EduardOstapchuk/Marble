@@ -117,7 +117,7 @@ header {
           .flex(@aling:center, @just:center);
           height: 277px;
           margin-top: 59px;
-          margin-left: 110px;
+          margin-left: 60px;
           border-bottom: 2px solid #DCDCDC;
             img {
           
@@ -160,13 +160,12 @@ header {
           height: 442px;
           margin-top: 60px;
           margin-left: 110px;
+          font-family: @font-family;
         }
             h2 {
-              text-align: justify;
              color: #4E4E4E;
              text-transform: uppercase;
              font-weight: bold;
-             font-family: @font-family;
              font-size: 18px;
              margin-top: -25px;
              
@@ -176,14 +175,197 @@ header {
              position: relative;
               width: 396px;
               height: 415px;
-                img {
+              margin-right: 5px;
+                .image {
+                  margin-top: 30px;
+                  overflow: hidden;
                   width: 381px;
                   height: 271px;
-                  margin-top: 30px;
-                  transition: all 2s ease-out;
+                }
+                img {
+                  transition: all 1s ease-out;
                       &:hover {
-                        transform: scale(1.1);
+                        transform: scale(1.5);
                       }
                 }
             }
-}
+
+            .name_post {
+              color: #4E4E4E;
+              font-size: 18px;
+              font-weight: bold;
+              display: flex;
+              margin-top: 25px;
+            }
+            .name_text {
+              color: #A8A8A8;
+              font-size: 13px;
+              display: flex;
+              margin-top: 14px;
+            }
+            .text {
+              width: 371px;
+              height: 43px;
+              color: #5C5C5C;
+              font-size: 14px;
+              display: flex;
+              margin-top: 23px;
+            }
+
+            .testim {
+              .flex(@aling:center, @just:center);
+              height: 233px;
+              width: 100%;
+              background: #EFEFEF;
+              margin-top: 56px;
+            }
+                .in{
+                  display: block;
+                  position: absolute;
+                  margin-top: -45px;
+                }
+                .text_inner {
+                  text-align: center;
+                  width: 734px;
+                  height: 51px;
+                  color: #A1A1A1;
+                  font-size: 20px;
+                 position: relative;
+                 top: 30px;
+                }
+            }
+
+        footer {
+          .flex(@aling:center, @just:center);
+          flex-direction: column;
+          height: 460px;
+          width: 100%;
+          background: #212121;
+        }
+            section {
+              .flex(@aling:start);
+              justify-content: space-evenly;
+              height: 360px;
+              width: 75%;
+              font-family: @font-family;
+              padding-right: 30px;
+              border-bottom: 1px solid #6C6C6C;
+            }
+            .get {
+              width: 257px;
+              height: 221px;
+                .in {
+                  color: #6C6C6C;
+                  text-transform: uppercase;
+                  font-family: @font-family;
+                  font-size: 18px;
+                  font-weight: bold;
+                  margin-top: 51px;
+              }
+              .in_text {
+                color: #CACACA;
+                width: 255px;
+                height: 63px;
+                font-size: 14px;
+                display: flex;
+                margin-top: 24px;
+              }
+              .contact {
+                width: 177px;
+                height: 87px;
+                color: #CACACA;
+                font-size: 14px;
+                display: flex;
+                margin-top: 33px;
+              }
+              .socials {
+                display: block;
+                position: relative;
+                right: 14%;
+                bottom: 38.5%;
+                padding: 9px;
+              }
+          }
+          .twitter {
+            width: 247px;
+            height: 221px;
+              .twit {
+                  color: #6C6C6C;
+                  text-transform: uppercase;
+                  font-family: @font-family;
+                  font-size: 18px;
+                  font-weight: bold;
+                  margin-top: 51px;
+              }
+              .ter {
+                width: 222px;
+                height: 207px;
+                color: #CACACA;
+                font-size: 14px;
+                display: flex;
+                margin-top: 25px;
+              }
+              .image_twitter {
+                display: block;
+                position: relative;
+                right: 13%;
+                bottom: 194px;
+                padding-bottom: 65px;
+              }
+          }
+
+            .popular {
+               width: 257px;
+              height: 247px;
+            }
+              .posts {
+                color: #6C6C6C;
+                text-transform: uppercase;
+                font-family: @font-family;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 51px;
+              }
+              .inner1 {
+                color: #CACACA;
+                font-size: 14px;
+                display: flex;
+                margin-top: 24px;
+              }
+              .amout {
+                color: #CACACA;
+                font-size: 14px;
+              }
+
+              .about {
+                width: 257px;
+                height: 247px;
+                  .us {
+                    color: #6C6C6C;
+                    text-transform: uppercase;
+                    font-family: @font-family;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-top: 51px;
+                  }
+                  .id {
+                    color: #CACACA;
+                    font-size: 14px;
+                    display: flex;
+                    margin-top: 24px;
+                    line-height: 1.5;
+                  }
+            }
+            .bottom_fot {
+              display: flex;
+              align-self: flex-start;
+              margin-top: 40px;
+              margin-left: 215px;
+                }
+                .all {
+                  color: #CACACA;
+                  font-size: 14px;
+                  font-family: @font-family;
+            }
+              
+        
