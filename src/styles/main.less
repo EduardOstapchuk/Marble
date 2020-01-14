@@ -226,30 +226,26 @@ body {
     }
 
     .service {
-      .flex(row,center);
+      .flex(center, center);
       flex-wrap: wrap;
-      width: fit-content;
-      border-bottom:2px solid #dcdcdc;
-      max-height: 340px;
+      width: 80%;
+      height: fit-content;
+      margin-top: 60px;
+      border-bottom: solid 2px #DCDCDC;
       @media(max-width:767px){
         padding-top:30px;
         max-width:600px;
         max-height: 100%;
       }
         .card {
-          display: block;
-          min-height: 230px;
-          box-sizing: border-box;
-          width: 233px;
-          text-align: center;
-          margin-top: 20px;
-          padding: 35px 0;
-          margin-right: 54px;
+          .flex(center, center);
+          flex-direction: row;
+          
           @media(max-width:767px){
             width:220px;
             min-width:220px;
             height:315px;
-            padding: 20px 0;
+            padding: 20px 5px;
             .flex(center, center);
           }
           @media(max-width:467px){
@@ -258,7 +254,11 @@ body {
           }
         }
         .circle{ 
-          height: fit-content;       
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          height: 277px;
+          width: 293px;      
             img:hover {
             animation: spin 1.5s linear infinite;
             }
@@ -269,11 +269,13 @@ body {
               margin-bottom: 0;
             }
             h6 {
+              width: 233px;
+              height: 63px;
               color: #616161;
+              font-family: Roboto;
               font-size: 14px;
               font-weight: 400;
-              margin-bottom: 0;
-              margin-top: 10px;
+              line-height: 24px;
             }
     }
     
@@ -288,11 +290,10 @@ body {
   }
 
   .works {
-    height: 442px;
+    height: 100%;
     width: fit-content;
-    box-sizing: border-box;
     min-height: 550px;
-    margin-top: 60px;
+    margin-top: 100px;
     .flex(row,center);
     flex-wrap: wrap;
     @media(max-width:767px) {
@@ -300,10 +301,10 @@ body {
       margin-top: 40px;
     }
     .post {
-        height: 420px;
+        height: 100%;
         width: fit-content;
         margin-right: 15px;
-        margin-top: -100px;
+        margin-top: -60px;
         @media(max-width:767px) {
           margin-top: 20px;
           width: 350px;
@@ -326,7 +327,7 @@ body {
       }
       .post1 {
         display: block;
-        margin-bottom: 106px;
+        margin-bottom: 54px;
       }
       .our {
         color: #4e4e4e;
